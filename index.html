@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix - Video Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Stream<span>Flix</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search videos...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <!-- Featured Video -->
+        <section class="featured-video">
+            <div class="video-container">
+                <video controls poster="https://picsum.photos/1280/720">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2>Big Buck Bunny - Featured Video</h2>
+                <p>A gentle giant of a rabbit finds his day spoiled by the rude and obnoxious behavior of the forest creatures. Watch as he gets his revenge in this animated short film.</p>
+                <div class="video-actions">
+                    <button class="action-button play-button">▶ Play</button>
+                    <button class="action-button add-button">+ Add to My List</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <div class="categories">
+            <div class="category active">All</div>
+            <div class="category">Action</div>
+            <div class="category">Comedy</div>
+            <div class="category">Drama</div>
+            <div class="category">Sci-Fi</div>
+            <div class="category">Horror</div>
+            <div class="category">Documentary</div>
+            <div class="category">Animation</div>
+        </div>
+
+        <!-- Recommended Videos -->
+        <section>
+            <h2 class="section-title">Recommended for You</h2>
+            <div class="video-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/237/300/169" alt="Video thumbnail">
+                        <div class="duration">12:34</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Amazing Nature Documentary</h3>
+                        <p>1.2M views • 2 days ago</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/1/300/169" alt="Video thumbnail">
+                        <div class="duration">45:12</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>The Ultimate Guide to Web Development</h3>
+                        <p>850K views • 1 week ago</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/1015/300/169" alt="Video thumbnail">
+                        <div class="duration">22:45</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Mountain Climbing Adventure</h3>
+                        <p>2.5M views • 3 weeks ago</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 4 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/1018/300/169" alt="Video thumbnail">
+                        <div class="duration">1:05:22</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Relaxing Piano Music for Studying</h3>
+                        <p>4.7M views • 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Videos -->
+        <section>
+            <h2 class="section-title">Trending Now</h2>
+            <div class="video-grid">
+                <!-- Video Card 5 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/1024/300/169" alt="Video thumbnail">
+                        <div class="duration">18:22</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Wildlife Photography Tips</h3>
+                        <p>1.8M views • 5 days ago</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 6 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/1025/300/169" alt="Video thumbnail">
+                        <div class="duration">32:10</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Cooking with Chef Michael</h3>
+                        <p>3.2M views • 2 days ago</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 7 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/1039/300/169" alt="Video thumbnail">
+                        <div class="duration">15:45</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Travel Vlog: Exploring Japan</h3>
+                        <p>2.1M views • 1 week ago</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 8 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://picsum.photos/id/1042/300/169" alt="Video thumbnail">
+                        <div class="duration">42:18</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Fitness Workout for Beginners</h3>
+                        <p>5.4M views • 3 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>StreamFlix</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Devices</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 StreamFlix. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
